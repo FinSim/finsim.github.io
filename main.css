@@ -134,15 +134,15 @@ body {
 /* LINKS */
 a {
 	text-decoration: none;
-	color: #737373;
+	color: #FFFFFF;
 }
 a:hover {
 	text-decoration: none;
-	color: #1ab2ff;
+	color: blue;
 }
 a:visted {
 	text-decoration: none;
-	color: #737373;
+	color: #FFFFFF;
 }
 
 @keyframes spinscale { 
