@@ -1,0 +1,142 @@
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>FINSIM</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<script>
+	$(function(){
+		$('#button1').click(function(){
+			$("a").attr("href", "#x")
+			e1 = $('#slider');
+			e1.addClass('animate1');
+			e1.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+			function (e) {
+				e1.removeClass('animate1');
+				$('#button1').attr("disabled", false)
+				$('#button2').attr("disabled", false)
+				$('#button3').attr("disabled", false)
+				$('#button4').attr("disabled", false)
+				$('#button5').attr("disabled", false)
+				$("a").attr("href", "#1")
+			});
+			e2 = $('#colourBubble');
+			e2.addClass('animate1B');
+			e2.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+			function (e) {
+				e2.removeClass('animate1B');
+			});
+		});
+	});
+	$(function(){
+		$('#button2').click(function(){
+			$("a").attr("href", "#y")
+			e1 = $('#slider');
+			e1.addClass('animate2');
+			e1.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+			function (e) {
+				e1.removeClass('animate2');
+				$('#button1').attr("disabled", false)
+				$('#button2').attr("disabled", false)
+				$('#button3').attr("disabled", false)
+				$('#button4').attr("disabled", false)
+				$('#button5').attr("disabled", false)
+				$("a").attr("href", "#1")
+			});
+			e2 = $('#colourBubble');
+			e2.addClass('animate2B');
+			e2.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+			function (e) {
+				e2.removeClass('animate2B');
+			});
+		});
+	});
+	$(function(){
+		$('#button3').click(function(){
+			$("a").attr("href", "#z")
+			e1 = $('#slider');
+			e1.addClass('animate3');
+			e1.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+			function (e) {
+				e1.removeClass('animate3');
+				$('#button1').attr("disabled", false)
+				$('#button2').attr("disabled", false)
+				$('#button3').attr("disabled", false)
+				$('#button4').attr("disabled", false)
+				$('#button5').attr("disabled", false)
+				$("a").attr("href", "#1")
+			});
+			e2 = $('#colourBubble');
+			e2.addClass('animate3B');
+			e2.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+			function (e) {
+				e2.removeClass('animate3B');
+			});
+		});
+	});
+	$(document).ready(function() {
+		setTimeout(function(){
+			$('body').addClass('loaded');
+		}, 10);
+	});
+</script>
+
+<body>
+
+	<div id="loader-wrapper">
+		<img src="slider.png" id="loader-spinner">
+	</div>
+	
+	<div class="locateTitle">
+		<p id="title">FINSIM<br>CHALLENGE</p>
+	</div>
+	<p id="subtitle">EXPERIENCE MONEY</p>
+	<!--
+	<div class="locateLinks">
+		<a href="#x"><button id="button1">ABOUT US</button></a>
+		<br>
+		<a href="#y"><button id="button2">GET SIM</button></a>
+		<br>
+		<a href="#z"><button id="button3">CONTACT US</button></a>
+	</div>
+	-->
+	
+	<a href="#1" id="link1"><img src="viewCircle.png" id="viewCircle"></a>
+	
+	<img src="slider1.png" id="slider">
+	<!--
+	<div id="colourBubble"></div>
+	<div id="bubble"></div>
+	-->
+	<div id="wallBorder"></div>
+	<div class="locateWall">
+	</div>
+	
+	
+	<!-- THE CONTENT -->
+
+	<div class="aboutus">
+		<h1>About Us</h1>
+		<a><p>We are a group of four high school students from the GTA with the vision of improving financial literacy for Canadian youth. Together we've developed a powerful simulation which exposes youth to the experience and realization of the cause and effects in the world of personal finance. FINSIM aims to simulate real-life scenarios in a risk-free environment that allows these people to experiment and discover financial literacy first-hand. </p><a>
+	</div>
+	<div class="getsim">
+		<h1>Get FINSIM</h1>
+		<p>Explore the world of finance freely with <a href="https://drive.google.com/open?id=1FcGlF7x0s5CNyIVy9fVdNcvz0g13RxA-">FINSIM</a>. Please note that this version is best compatible with PowerPoint 2016 on Windows. Sorry for any inconvenience.</p>
+	</div>
+	<div class="contactus">
+		<h1>Contact Us</h1>
+		<a><p>Feel free to ask us a question! <br> finsim@gmail.com</p><a>
+	</div>
+	
+	<div class="FAQs">
+		<h1>FAQs</h1>
+		<p><b>Why did we choose this solution?</b><br>We wanted to maximize our impact on the lives of youth with respect of financial literacy, thus we wanted our final solution to be able to penetrate a large user base, while significantly increasing the overall financial knowledge of our users.</p>
+		<p><b>How is it relevant to students/youth?</b><br>It directly relates to them by helping them visualize their future and how it must be led with a financial knowledgeable perspective.</p>
+		<p><b>How much does this cost?</b><br>The software itself will be free but we will ask for an optional donation at the end of the game which will be used to increase FinLit awareness.</p>
+		<p><b>How do you plan to advertise/increase reception?</b><br>There will be integrated options in the game which require a “friend’s help” through social media platforms (e.g. facebook, twitter, etc.), which will advertise our game. Additionally we will pursue education partners starting with private schools and organizations such as futurfund. As our reception increases we hope to be introduced into the public school system, and eventually nationwide. </p>
+	</div>
+
+<body>	
+
+
